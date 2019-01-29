@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /manage
+
+Sitemap: http://books.malgadi.co.in/sitemap.xml

@@ -1,0 +1,17 @@
+[
+    {
+        "image" : "/images/team/kuldip.jpg",
+        "name" : "Kuldip Savaliya",
+        "phone" : "8490001906"
+    },
+    {
+        "image" : "/images/team/dhiraj.jpg",
+        "name" : "Dhiraj Patel",
+        "phone" : "7046365527"
+    },
+    {
+        "image" : "/images/team/ria.jpg",
+        "name" : "Ria Langalia",
+        "phone" : "9898067495"
+    }
+]
