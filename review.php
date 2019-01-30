@@ -1,7 +1,7 @@
 <?php
     include './includes/config.php';
 
-    $title = "Reviews - Malgadi Electronics";
+    $title = "Reviews - Malgadi Books";
     $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress."/review.php";

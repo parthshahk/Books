@@ -5,7 +5,7 @@
 
                     <div class="col l6 s12">
                         <h5 class="light">Malgadi Books</h5>
-                        <p class="grey-text text-lighten-4 footer-description">Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate. Along with this, we also organize workshops and seminars in colleges to impart technical knowledge to students. We intend to develop this platform and extend its reach to as many students as possible, hence making technical education a bit more interesting. This is the platform which made us technically potent along with an experience of entrepreneurship.</p>
+                        <p class="grey-text text-lighten-4 footer-description">Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering. We here at Malgadi intend to develop the platform whereby selling engineering textbooks on fingertips and help college students with their studies. Along with this, we also actively organize workshops and seminars in colleges to bestow technical knowledge to students.</p>
                         
                         <div class="row">
                             <div class="col s12">
