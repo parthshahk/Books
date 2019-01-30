@@ -32,8 +32,8 @@
     */
     $mail->SMTPSecure = 'tls';                         
     $mail->Port = 587;              
-    $mail->setFrom('ready2help.malgadi@gmail.com', 'Malgadi Electronics');
-    $mail->addReplyTo('ready2help.malgadi@gmail.com', 'Malgadi Electronics');
+    $mail->setFrom('malgadibooks@gmail.com', 'Malgadi Books');
+    $mail->addReplyTo('malgadibooks@gmail.com', 'Malgadi Books');
     $mail->isHTML(true); 
 
     if($action == 'orderPlaced'){

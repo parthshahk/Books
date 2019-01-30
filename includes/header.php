@@ -26,7 +26,7 @@
     </head>
     <body>
         
-        <nav class="nav-extended green darken-1">
+        <nav class="nav-extended purple">
 
             <div class="nav-wrapper">
                 <a href="<?php echo BaseAddress; ?>" class="brand-logo"><img src="<?php echo BaseAddress; ?>/favicon.ico" class="hide-on-med-and-down" alt="Malgadi Electronics Logo">Malgadi</a>
