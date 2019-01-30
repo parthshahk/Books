@@ -120,6 +120,14 @@ nav .tabs .tab a:hover{
 .social-icons h6{
     line-height:1.8rem;
 }
+.tabs {
+    overflow-x: visible !important;
+    overflow-y: initial !important;
+}
+.dropdown-content li{
+    text-align: center;
+    padding-top: 1rem;
+}
 
 /*      Reviews     */
 .reviews{

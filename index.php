@@ -2,7 +2,7 @@
     include './includes/config.php';
 
     $title = "Malgadi Books | Shop Books Online";
-    $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
+    $pageDescription = "Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress;
 

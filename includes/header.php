@@ -20,7 +20,7 @@
         <meta property="og:url" content="<?php echo $canonUrl; ?>" />
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />    
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
-        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css">
+        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css?q=1">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Anton|Roboto:300,400,500" rel="stylesheet">
         <link rel="canonical" href="<?php echo $canonUrl; ?>" />
     </head>
@@ -29,7 +29,7 @@
         <nav class="nav-extended purple">
 
             <div class="nav-wrapper">
-                <a href="<?php echo BaseAddress; ?>" class="brand-logo"><img src="<?php echo BaseAddress; ?>/favicon.ico" class="hide-on-med-and-down" alt="Malgadi Electronics Logo">Malgadi</a>
+                <a href="<?php echo BaseAddress; ?>" class="brand-logo"><img src="<?php echo BaseAddress; ?>/favicon.ico" class="hide-on-med-and-down" alt="Malgadi Books Logo">Malgadi</a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars" aria-hidden="true"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="<?php echo BaseAddress; ?>">Home</a></li>
@@ -56,16 +56,86 @@
 
             <div class="nav-content">
                 <ul class="tabs tabs-fixed-width grey lighten-5">
-                    <li class="tab"><a target="_self" href="categories.php?q=Basic+Components" class="grey-text text-darken-2">CE</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Robotics" class="grey-text text-darken-2">IT</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Controllers" class="grey-text text-darken-2">EC</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Sensors" class="grey-text text-darken-2">Mech.</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=IC" class="grey-text text-darken-2">IC</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Kits" class="grey-text text-darken-2">Civil</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=EG+Kits" class="grey-text text-darken-2">Chem.</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="ceDrop">CE</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="itDrop">IT</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="ecDrop">EC</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="mechDrop">Mech</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="icDrop">IC</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="civilDrop">Civil</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="chemDrop">Chem</a></li>
                     <li class="tab hide"><a href="#" class="active"></a></li>
                 </ul>
             </div>
+
+            <ul id='ceDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ce&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ce&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ce&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ce&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ce&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='itDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=it&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=it&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=it&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=it&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=it&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='ecDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ec&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ec&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ec&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ec&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ec&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='mechDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=mech&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=mech&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mech&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mech&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mech&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='icDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ic&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ic&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ic&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ic&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ic&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='civilDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=civil&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=civil&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=civil&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=civil&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=civil&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
+
+            <ul id='chemDrop' class='dropdown-content'>
+                <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
+                <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
+                <li><a href="categories.php?br=chem&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=chem&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=chem&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=chem&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=chem&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+            </ul>
 
         </nav>
 

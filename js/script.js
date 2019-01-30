@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var tabs = document.querySelectorAll('.tabs');                                      // Tabs
     var tabsInstance = M.Tabs.init(tabs, {});
 
+    var dropdown = document.querySelectorAll('.dropdown-trigger');                      // Dropdown
+    var dropdownInstance = M.Dropdown.init(dropdown, {});
+
     var sidenav = document.querySelectorAll('.sidenav');                                // Sidenav
     var sidenavInstance = M.Sidenav.init(sidenav, {
         inDuration: 200,
