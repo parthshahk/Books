@@ -97,7 +97,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 center">
-                        <button class="btn-large waves-light waves-effect deep-orange darken-2" onclick="openSidenav()">Browse Categories<i class="fa fa-list right" aria-hidden="true"></i></button>
+                        <button class="btn-large waves-light waves-effect blue darken-2" onclick="openSidenav()">Browse Categories<i class="fa fa-list right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>

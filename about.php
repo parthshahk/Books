@@ -21,14 +21,27 @@
                     </div>
                     <div class="col s12">
                         <p class="light">
-                            Malgadi is a non profitable organisation run by college students to provide the best quality electronics components at reasonable rates. We here at Malgadi intend to develop the platform whereby selling electronic components and help college students.  Along with this, we also organize workshops and seminars in colleges to impart technical knowledge to students.
+                            Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering. We here at Malgadi intend to develop the platform whereby selling engineering textbooks on fingertips and help college students with their studies. Along with this, we also actively organize workshops and seminars in colleges to bestow technical knowledge to students.
                         </p>
                         <p class="light">
-                            This website contains a huge catalog of various electronic components you need for your project. Moreover, we also have various project kits that contain all the components for a particular project. We also take bulk orders for workshops and seminars.
+                            We believe in providing the best quality of service to our customers, all books at Malgadi Books are verified for their integrity by our experts. 
                         </p>
-                        <p class="light">
-                            We believe in providing the best quality of service to our customers, all products at Malgadi Books are verified for their integrity by our experts.
-                        </p>
+                        <h5 class="light center">Our Values</h5>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="col s4 light center aboutvision">
+                                <i class="fa fa-handshake-o" aria-hidden="true"></i><br>
+                                We believe in making friends, not costumers.
+                            </div>
+                            <div class="col s4 light center aboutvision">
+                                <i class="fa fa-users" aria-hidden="true"></i><br>
+                                We believe in providing, not earning.   
+                            </div>
+                            <div class="col s4 light center aboutvision">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i><br>    
+                                We believe in helping others before benefiting ourselves.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

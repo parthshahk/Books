@@ -154,6 +154,11 @@ nav .tabs .tab a:hover{
 #photos div{
     margin-bottom: 45px;
 }
+.aboutvision i {
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
 @media screen and (max-width: 600px){
     #photos img{
         width: 50%;

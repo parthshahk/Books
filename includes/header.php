@@ -56,13 +56,13 @@
 
             <div class="nav-content">
                 <ul class="tabs tabs-fixed-width grey lighten-5">
-                    <li class="tab"><a target="_self" href="categories.php?q=Basic+Components" class="grey-text text-darken-2">Basic Components</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Robotics" class="grey-text text-darken-2">Robotics</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Controllers" class="grey-text text-darken-2">Controllers</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Sensors" class="grey-text text-darken-2">Sensors</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=Basic+Components" class="grey-text text-darken-2">CE</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=Robotics" class="grey-text text-darken-2">IT</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=Controllers" class="grey-text text-darken-2">EC</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=Sensors" class="grey-text text-darken-2">Mech.</a></li>
                     <li class="tab"><a target="_self" href="categories.php?q=IC" class="grey-text text-darken-2">IC</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=Kits" class="grey-text text-darken-2">Kits</a></li>
-                    <li class="tab"><a target="_self" href="categories.php?q=EG+Kits" class="grey-text text-darken-2">EG Kits</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=Kits" class="grey-text text-darken-2">Civil</a></li>
+                    <li class="tab"><a target="_self" href="categories.php?q=EG+Kits" class="grey-text text-darken-2">Chem.</a></li>
                     <li class="tab hide"><a href="#" class="active"></a></li>
                 </ul>
             </div>
