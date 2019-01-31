@@ -9,8 +9,8 @@
         header("Location: ".BaseAddress);
     }
 
-    $title = "Order Placed Successfully - Malgadi Electronics";
-    $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
+    $title = "Order Placed Successfully - Malgadi Books";
+    $pageDescription = "Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress."/thankyou.php";
 
@@ -32,7 +32,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center">
-                        <h5 class="light">Your Order id is <span class="purple-text"><b><?php echo $id; ?></b></span></h5>
+                        <h5 class="light">Your Order id is <span class="purple-text text-darken-2"><b><?php echo $id; ?></b></span></h5>
                         <p class="light">Kindly note it down for future reference.</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="row"></div>
                 <div class="row">
                     <div class="col s12 center">
-                        <a href="<?php echo BaseAddress; ?>" class="btn-large red waves-light waves-effect">Home</a>
+                        <a href="<?php echo BaseAddress; ?>" class="btn-large blue darken-2 waves-light waves-effect">Home</a>
                     </div>
                 </div>
             </div>

@@ -47,9 +47,9 @@
         if(!$row['Notified']){
 
             $mail->addAddress($row['Email']);
-            $mail->Subject = 'Order Placed Malgadi Electronics';
-            $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been placed successfully worth Rs. <b>'.$row['Amount'].'</b><br>Thank You for shopping with us. - Malgadi Electronics';
-            $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been placed successfully worth Rs. '.$row['Amount'].'Thank You for shopping with us. - Malgadi Electronics';
+            $mail->Subject = 'Order Placed Malgadi Books';
+            $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been placed successfully worth Rs. <b>'.$row['Amount'].'</b><br>Thank You for shopping with us. - Malgadi Books';
+            $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been placed successfully worth Rs. '.$row['Amount'].'Thank You for shopping with us. - Malgadi Books';
             $mail->send();
 
             $mail->ClearAllRecipients();
@@ -58,7 +58,7 @@
                 $key = array_search($recipients[$action][$i], array_column($teamInfo, 'name'));
                 $mail->addAddress($teamInfo[$key]['email']);
             }
-            $mail->Subject = 'Order Placed Malgadi Electronics';
+            $mail->Subject = 'Order Placed Malgadi Books';
             $mail->Body    = 'A new Order with ID : <b>'.$row['ID'].'</b> has been placed worth Rs. <b>'.$row['Amount'].'</b>';
             $mail->AltBody = 'A new Order with ID : '.$row['ID'].' has been placed worth Rs. '.$row['Amount'];
             $mail->send();
@@ -74,7 +74,7 @@
             $key = array_search($recipients[$action][$i], array_column($teamInfo, 'name'));
             $mail->addAddress($teamInfo[$key]['email']);
         }
-        $mail->Subject = 'New Message Malgadi Electronics';
+        $mail->Subject = 'New Message Malgadi Books';
         $mail->Body    = 'A new Message has been recieved.';
         $mail->AltBody = 'A new Message has been recieved.';
         $mail->send();
@@ -85,7 +85,7 @@
             $key = array_search($recipients[$action][$i], array_column($teamInfo, 'name'));
             $mail->addAddress($teamInfo[$key]['email']);
         }
-        $mail->Subject = 'New Review Malgadi Electronics';
+        $mail->Subject = 'New Review Malgadi Books';
         $mail->Body    = 'A new Review has been Posted.';
         $mail->AltBody = 'A new Review has been Posted.';
         $mail->send();
@@ -99,9 +99,9 @@
         $row = $statement->fetch();
 
         $mail->addAddress($row['Email']);
-        $mail->Subject = 'Order Delivered - Malgadi Electronics';
-        $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been delivered successfully.<br>Make sure to leave a <a href="http://electronics.malgadi.co.in/review.php" target="_BLANK">review</a> on the website.<br><br>Thank You for shopping with us. - Malgadi Electronics';
-        $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been delivered successfully. Thank You for shopping with us. - Malgadi Electronics';
+        $mail->Subject = 'Order Delivered - Malgadi Books';
+        $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been delivered successfully.<br>Make sure to leave a <a href="http://books.malgadi.co.in/review.php" target="_BLANK">review</a> on the website.<br><br>Thank You for shopping with us. - Malgadi Books';
+        $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been delivered successfully. Thank You for shopping with us. - Malgadi Books';
         $mail->send();
 
         $mail->ClearAllRecipients();
@@ -125,9 +125,9 @@
         $row = $statement->fetch();
 
         $mail->addAddress($row['Email']);
-        $mail->Subject = 'Order Canceled - Malgadi Electronics';
-        $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been canceled.<br>If this was not intended please contact us immediately. - Malgadi Electronics';
-        $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been canceled. If this was not intended please contact us immediately. - Malgadi Electronics';
+        $mail->Subject = 'Order Canceled - Malgadi Books';
+        $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been canceled.<br>If this was not intended please contact us immediately. - Malgadi Books';
+        $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been canceled. If this was not intended please contact us immediately. - Malgadi Books';
         $mail->send();
 
         $mail->ClearAllRecipients();
@@ -163,9 +163,9 @@
             $mail->addAddress($row['Email']);
         }
 
-        $mail->Subject = 'Malgadi Electronics Stock Arrival';
-        $mail->Body    = $name." is now available at <a href='http://electronics.malgadi.co.in'>Malgadi Electronics</a>! Place your order now!";
-        $mail->AltBody = $name.' is now available at Malgadi Electronics! Place your order now!';
+        $mail->Subject = 'Malgadi Books Stock Arrival';
+        $mail->Body    = $name." is now available at <a href='http://books.malgadi.co.in'>Malgadi Books</a>! Place your order now!";
+        $mail->AltBody = $name.' is now available at Malgadi Books! Place your order now!';
         $mail->send();
 
         $statement = $pdo->prepare("DELETE FROM notify_me WHERE ID = :id");

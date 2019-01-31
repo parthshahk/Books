@@ -45,6 +45,7 @@
                     
                     <div class="col m6 offset-m1 s12">
                         <h5 class="light"><?php echo $row['Name']; ?></h5>
+                        <h6 class="light"><?php echo $row['Author']; ?></h6>
                         <p class="green-text <?php echo $row['Stock Status'] ? '' : 'hide'; ?>">In Stock</p>
                         <p class="red-text <?php echo $row['Stock Status'] ? 'hide' : ''; ?>">Out Of Stock</p>
                         <h5 class="blue-text text-darken-2 light">Rs. <?php echo $row['Selling Price']; ?> <strike class="grey-text">Rs. <?php echo $row['Original Price']; ?></strike></h5>

@@ -231,3 +231,14 @@ nav .tabs .tab a:hover{
 blockquote{
     border-left: 5px solid #f44336
 }
+
+    /* Checkout */
+.radio-otype p label:first-child{
+    margin-right: 50px;
+}
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+    background-color: #6a1b9a;
+}
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+    border: 2px solid #6a1b9a;
+}

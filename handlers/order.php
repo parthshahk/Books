@@ -3,9 +3,9 @@
     include '../includes/helpers.php';
 
 
-    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['address']) && isset($_POST['phone']) && isset($_POST['city']) && isset($_POST['paymode'])){
+    if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['address']) && isset($_POST['phone']) && isset($_POST['otype'])){
 
-        if($_POST['name'] == '' || $_POST['email'] == '' || $_POST['address'] == '' || $_POST['phone'] == '' || $_POST['city'] == '' || $_POST['paymode'] == ''){
+        if($_POST['name'] == '' || $_POST['email'] == '' || $_POST['address'] == '' || $_POST['phone'] == '' || $_POST['otype'] == ''){
             exit("Sufficient information was not provided. Please <a href='../checkout.php'>Go back</a> and try again!");
         }
 
@@ -21,8 +21,7 @@
     $phone      =   filterStringBasic($_POST['phone']);
     $branch     =   filterStringBasic($_POST['branch']);
     $semester   =   filterStringBasic($_POST['semester']);
-    $city       =   filterStringBasic($_POST['city']);
-    $payMode    =   filterStringBasic($_POST['paymode']);
+    $orderType  =   filterStringBasic($_POST['otype']);
 
     if($branch == ''){
         $branch = '-';
@@ -42,8 +41,8 @@
 
     
     $sql =  "    INSERT INTO 
-                orders(Date, Name, Email, Mobile, Address, Branch, Semester, City, PayMode, Contents, Amount, OStatus, Notified, Operator) 
-                VALUES(CURDATE(), :name, :email, :mobile, :address, :branch, :semester, :city, :paymode, :contents, :amount, 'Placed', 0, '-')
+                orders(Date, Name, Email, Mobile, Address, Branch, Semester, Contents, Amount, OStatus, Notified, Operator, Type) 
+                VALUES(CURDATE(), :name, :email, :mobile, :address, :branch, :semester, :contents, :amount, 'Placed', 0, '-', :otype)
             ";
 
     $statement = $pdo->prepare($sql);
@@ -56,10 +55,9 @@
             'address'   =>  $address,
             'branch'    =>  $branch,
             'semester'  =>  $semester,
-            'city'      =>  $city,
-            'paymode'   =>  $payMode,
             'contents'  =>  $contentStr,
-            'amount'    =>  $subtotal
+            'amount'    =>  $subtotal,
+            'otype'     =>  $orderType
         ]
     );
 

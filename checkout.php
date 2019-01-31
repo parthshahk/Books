@@ -10,8 +10,8 @@
     }
     
 
-    $title = "Place Your Order - Malgadi Electronics";
-    $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
+    $title = "Place Your Order - Malgadi Books";
+    $pageDescription = "Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress."/checkout.php";
 
@@ -63,12 +63,18 @@
                     <input placeholder="Semester" type="text" name="semester">
                 </div>
 
-                <div class="col s6 m2 offset-m3 xl2 offset-xl3 input-field hide">
-                    <input type="text" name="city" value="Nadiad">
-                </div>
-
-                <div class="col s6 m2 xl2 input-field hide">
-                    <input type="text" name="paymode" value="COD">
+                <div class="col s12 m6 offset-m3 xl6 offset-xl3 input-field radio-otype center">
+                    <p>
+                        <label>
+                            <input name="otype" type="radio" value="buy" checked />
+                            <span>Buy</span>
+                        </label>
+                    
+                        <label>
+                            <input name="otype" type="radio" value="rent" />
+                            <span>Rent</span>
+                        </label>
+                    </p>
                 </div>
 
                 </form>
@@ -88,7 +94,7 @@
             </div>
             <div class="row">
                 <div class="col s12 center">
-                    <button class="btn-large waves-effect waves-light red" type="submit" form="order-form" id="order-form-button">Place Order</button>
+                    <button class="btn-large waves-effect waves-light blue darken-2" type="submit" form="order-form" id="order-form-button">Place Order</button>
                 </div>
             </div>
         </div>

@@ -2,8 +2,8 @@
     include './includes/config.php';
     include './includes/helpers.php';
 
-    $title = "Track Order - Malgadi Electronics";
-    $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
+    $title = "Track Order - Malgadi Books";
+    $pageDescription = "Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress."/cart.php";
 
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center">
-                        <button class="btn-large red waves-effect waves-light" type="submit" form="track-order"><i class="fa fa-search left"></i>Search</button>
+                        <button class="btn-large blue darken-2 waves-effect waves-light" type="submit" form="track-order"><i class="fa fa-search left"></i>Search</button>
                     </div>
                 </div>
 
@@ -75,6 +75,10 @@
 
                     }else if($row['OStatus'] == 'Delivered'){
                         $statusColor = 'green-text text-darken-3';
+
+                    }else if($row['OStatus'] == 'Rented'){
+                        $statusColor = 'purple-text text-darken-4';
+
                     }
 
                     $contents='';
@@ -82,18 +86,18 @@
                     for($i = 0; $i < sizeof($contentArray) ;$i++){
 
                         $contentArray[$i] = explode(".", $contentArray[$i]);
-                        $s = $pdo->prepare("SELECT `Full Name` FROM items WHERE `ID`=".$contentArray[$i][0]."");
+                        $s = $pdo->prepare("SELECT `Name` FROM items WHERE `ID`=".$contentArray[$i][0]."");
                         $s->execute();
                         $row2 = $s->fetch();
-                        $contents .= $row2['Full Name']." <b>X ".$contentArray[$i][1]."</b><br>";
+                        $contents .= $row2['Name']." <b>X ".$contentArray[$i][1]."</b><br>";
 
                         if(!isset($requirement[$contentArray[$i][0]])){
                             $requirement[$contentArray[$i][0]]['quantity'] = $contentArray[$i][1];
-                            $requirement[$contentArray[$i][0]]['name'] = $row2['Full Name'];
+                            $requirement[$contentArray[$i][0]]['name'] = $row2['Name'];
                             $requirement[$contentArray[$i][0]]['idList'] = $row['ID'];
                         }else{
                             $requirement[$contentArray[$i][0]]['quantity'] += $contentArray[$i][1];
-                            $requirement[$contentArray[$i][0]]['name'] = $row2['Full Name'];
+                            $requirement[$contentArray[$i][0]]['name'] = $row2['Name'];
                             $requirement[$contentArray[$i][0]]['idList'] .= ", ".$row['ID'];
                         }
 
@@ -124,7 +128,7 @@
 
             <div class="row">
                 <div class="col s12 center">
-                    <a href="./" class="btn-large red waves-light waves-effect">Home</a>
+                    <a href="./" class="btn-large blue darken-2 waves-light waves-effect">Home</a>
                 </div>
             </div>
 
@@ -138,7 +142,7 @@
                     <br>
                     <p>Please make sure you entered correct Order ID and Email associated with that order.</p>
                     <br>
-                    <a href="track.php" class="btn-large red waves-effect waves-light">Try Again</a>
+                    <a href="track.php" class="btn-large blue darken-2 waves-effect waves-light">Try Again</a>
                 </div>
             </div>
 
