@@ -100,11 +100,11 @@
             <ul id='mechDrop' class='dropdown-content'>
                 <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
                 <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
-                <li><a href="categories.php?br=mech&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
-                <li><a href="categories.php?br=mech&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=mech&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=mech&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=mech&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mh&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=mh&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mh&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mh&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=mh&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
             </ul>
 
             <ul id='icDrop' class='dropdown-content'>
@@ -120,21 +120,21 @@
             <ul id='civilDrop' class='dropdown-content'>
                 <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
                 <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
-                <li><a href="categories.php?br=civil&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
-                <li><a href="categories.php?br=civil&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=civil&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=civil&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=civil&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=cl&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=cl&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=cl&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=cl&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=cl&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
             </ul>
 
             <ul id='chemDrop' class='dropdown-content'>
                 <li><a href="categories.php?br=cm&sem=1" class="blue-text text-darken-2">1<sup>st</sup> Sem</a></li>
                 <li><a href="categories.php?br=cm&sem=2" class="blue-text text-darken-2">2<sup>nd</sup> Sem</a></li>
-                <li><a href="categories.php?br=chem&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
-                <li><a href="categories.php?br=chem&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=chem&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=chem&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
-                <li><a href="categories.php?br=chem&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ch&sem=3" class="blue-text text-darken-2">3<sup>rd</sup> Sem</a></li>
+                <li><a href="categories.php?br=ch&sem=4" class="blue-text text-darken-2">4<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ch&sem=5" class="blue-text text-darken-2">5<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ch&sem=6" class="blue-text text-darken-2">6<sup>th</sup> Sem</a></li>
+                <li><a href="categories.php?br=ch&sem=7" class="blue-text text-darken-3">7<sup>th</sup> Sem</a></li>
             </ul>
 
         </nav>
@@ -156,13 +156,141 @@
                         <a class="collapsible-header active"><span class="light">Categories</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="categories.php?q=Basic+Components"><span class="light">Basic Components</span></a></li>
-                                <li><a href="categories.php?q=Robotics"><span class="light">Robotics</span></a></li>
-                                <li><a href="categories.php?q=Controllers"><span class="light">Controllers</span></a></li>
-                                <li><a href="categories.php?q=Sensors"><span class="light">Sensors</span></a></li>
-                                <li><a href="categories.php?q=IC"><span class="light">ICs</span></a></li>
-                                <li><a href="categories.php?q=Kits"><span class="light">Kits</span></a></li>
-                                <li><a href="categories.php?q=EG+Kits"><span class="light">EG Kits</span></a></li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">CE</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ce&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ce&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ce&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ce&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ce&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">IT</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=it&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=it&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=it&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=it&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=it&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">EC</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ec&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ec&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ec&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ec&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ec&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">Mech</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=mh&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=mh&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=mh&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=mh&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=mh&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">IC</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ic&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ic&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ic&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ic&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ic&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">Civil</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cl&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cl&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cl&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cl&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cl&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header"><span class="light">Chem</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="categories.php?br=cm&sem=1"><span class="light">1<sup>st</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=cm&sem=2"><span class="light">2<sup>nd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ch&sem=3"><span class="light">3<sup>rd</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ch&sem=4"><span class="light">4<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ch&sem=5"><span class="light">5<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ch&sem=6"><span class="light">6<sup>th</sup> Sem</span></a></li>
+                                                    <li><a href="categories.php?br=ch&sem=7"><span class="light">7<sup>th</sup> Sem</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
                             </ul>
                         </div>
                     </li>

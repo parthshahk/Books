@@ -1,8 +1,8 @@
 <?php
     include './includes/config.php';
 
-    $title = "Shopping Cart - Malgadi Electronics";
-    $pageDescription = "Malgadi is a for the students, by the student's venture. It is a non-profitable organization started by the college students to provide better quality electronic components at a reasonable rate.";
+    $title = "Shopping Cart - Malgadi Books";
+    $pageDescription = "Malgadi books is a start-up organisation run by college students to provide academic engineering text books and reference books at reasonable rates to students pursuing engineering.";
     $imagePath = BaseAddress."/images/logo.jpg";
     $canonUrl = BaseAddress."/cart.php";
 
@@ -38,7 +38,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 center">
-                            <a class="btn-large waves-light waves-effect green" href="<?php echo BaseAddress; ?>">Continue Shopping<i class="fa fa-shopping-bag right" aria-hidden="true"></i></a>
+                            <a class="btn-large waves-light waves-effect blue darken-2" href="<?php echo BaseAddress; ?>">Continue Shopping<i class="fa fa-shopping-bag right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -73,15 +73,15 @@
                             <div class="card grey lighten-3">
                                 <div class="card-image">
                                     <img class="activator" src="<?php echo BaseAddress; ?>/images/products/<?php echo $row['ID']; ?>.0.jpg">
-                                    <a id="button<?php echo $row['ID']; ?>" class="btn-floating halfway-fab red accent-2 waves-light waves-effect" onclick="removeFromCart(<?php echo $row['ID']; ?>)">
+                                    <a id="button<?php echo $row['ID']; ?>" class="btn-floating halfway-fab blue darken-2 waves-light waves-effect" onclick="removeFromCart(<?php echo $row['ID']; ?>)">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </a>
                                 </div>
                                 <div class="card-content">
                                     <a class="card-title activator grey-text text-darken-4 truncate" href="<?php echo BaseAddress ;?>/item.php?q=<?php echo $row['ID'] ?>">
-                                        <?php echo $row['Short Name']; ?>
+                                        <?php echo $row['Name']; ?>
                                     </a>
-                                    <p class="blue-text">Rs. <?php echo $row['Selling Price']; ?> <strike class="grey-text">Rs. <?php echo $row['Original Price']; ?></strike></p>
+                                    <p class="blue-text text-darken-2">Rs. <?php echo $row['Selling Price']; ?> <strike class="grey-text">Rs. <?php echo $row['Original Price']; ?></strike></p>
                                 </div>
 
                                 <div class="col s12 divider"></div>
@@ -152,7 +152,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 center">
-                            <button class="btn-large waves-light waves-effect green" onclick="validateCart()">Checkout<i class="fa fa-shopping-bag right" aria-hidden="true"></i></button>
+                            <button class="btn-large waves-light waves-effect blue darken-2" onclick="validateCart()">Checkout<i class="fa fa-shopping-bag right" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>

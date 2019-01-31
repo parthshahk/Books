@@ -3,11 +3,18 @@
     include './includes/helpers.php';
 
     $cat = '';
-    if(isset($_GET['br']) && isset($_GET['sem'])){
+    if(isset($_GET['br'])){
+
         $branch = $_GET['br'];
         $branch = filterStringBasic($branch);
-        $sem = $_GET['sem'];
-        $sem = filterStringBasic($sem);
+
+        if(isset($_GET['sem'])){
+            $sem = $_GET['sem'];
+            $sem = filterStringBasic($sem);
+        }else{
+            $sem = 'all';
+        }
+
     }else{
         header('Location: '.BaseAddress);
     }
@@ -37,8 +44,15 @@
         </section>
 
         <?php
-            $cardObject = $pdo->prepare('SELECT * FROM items WHERE `Branch` = :br AND `Semester` = :sem AND `Deprecated`=0 ORDER by `ID` DESC');
-            $cardObject->execute(['br' => $branch, 'sem' => $sem]);
+
+            if($sem == 'all'){
+                $cardObject = $pdo->prepare('SELECT * FROM items WHERE `Branch` = :br AND `Deprecated`=0 ORDER by `ID` DESC');
+                $cardObject->execute(['br' => $branch]);
+            }else{
+                $cardObject = $pdo->prepare('SELECT * FROM items WHERE `Branch` = :br AND `Semester` = :sem AND `Deprecated`=0 ORDER by `ID` DESC');
+                $cardObject->execute(['br' => $branch, 'sem' => $sem]);
+            }
+            
             include './includes/cards.php';
         ?>
 

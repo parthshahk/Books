@@ -70,7 +70,7 @@
                 ?>
                 <div class="row">
                 <?php
-                    if($row['Description'] != '-'){
+                    if($row['Description'] != '' && $row['Description'] != '-'){
                 ?>
                     <div class="col s12">
                         <h5 class="light">Description</h5>
