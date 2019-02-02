@@ -66,12 +66,12 @@
                 <div class="col s12 m6 offset-m3 xl6 offset-xl3 input-field radio-otype center">
                     <p>
                         <label>
-                            <input name="otype" type="radio" value="buy" checked />
+                            <input name="otype" type="radio" value="Buy" checked />
                             <span>Buy</span>
                         </label>
                     
                         <label>
-                            <input name="otype" type="radio" value="rent" />
+                            <input name="otype" type="radio" value="Rent" />
                             <span>Rent</span>
                         </label>
                     </p>

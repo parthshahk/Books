@@ -115,6 +115,31 @@
         $mail->AltBody = 'Order with ID : '.$row['ID'].' has been delivered.';
         $mail->send();
 
+    } elseif($action == 'orderRented'){
+
+        $id = filterStringBasic($_GET['id']);
+
+        $statement = $pdo->prepare("SELECT * FROM orders WHERE ID = :id");
+        $statement->execute(['id' => $id]);
+        $row = $statement->fetch();
+
+        $mail->addAddress($row['Email']);
+        $mail->Subject = 'Order Rented - Malgadi Books';
+        $mail->Body    = 'Your Order with ID : <b>'.$row['ID'].'</b> has been delivered (on rent) successfully.<br>Make sure to leave a <a href="http://books.malgadi.co.in/review.php" target="_BLANK">review</a> on the website.<br><br>Thank You for shopping with us. - Malgadi Books';
+        $mail->AltBody = 'Your Order with ID : '.$row['ID'].' has been delivered (on rent) successfully. Thank You for shopping with us. - Malgadi Books';
+        $mail->send();
+
+        $mail->ClearAllRecipients();
+
+        for($i = 0 ; $i < sizeof($recipients['orderDelivered']) ; $i++){
+            $key = array_search($recipients['orderDelivered'][$i], array_column($teamInfo, 'name'));
+            $mail->addAddress($teamInfo[$key]['email']);
+        }
+        $mail->Subject = 'Order Rented';
+        $mail->Body    = 'Order with ID : <b>'.$row['ID'].'</b> has been rented.';
+        $mail->AltBody = 'Order with ID : '.$row['ID'].' has been rented.';
+        $mail->send();
+
 
     } elseif ($action == 'orderCanceled') {
 
@@ -148,7 +173,7 @@
         $statement = $pdo->prepare("SELECT * FROM items WHERE ID = :id");
         $statement->execute(['id' => $id]);
         $row = $statement->fetch();
-        $name = $row['Full Name'];
+        $name = $row['Name'];
 
         $statement = $pdo->prepare("SELECT * FROM notify_me WHERE ID = :id");
         $statement->execute(['id' => $id]);

@@ -1,7 +1,7 @@
 <?php
     include './includes/config.php';
 
-    $title = 'Member Section - Malgadi Electronics';
+    $title = 'Member Section - Malgadi Books';
     $thisPage = 'home';
 
     include  './includes/header.php';

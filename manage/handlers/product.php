@@ -76,61 +76,33 @@
     }  elseif ($action == 'addProduct') {
         
         $fullName =         filterStringBasic($_POST['fullName']);
-        $shortName =        filterStringBasic($_POST['shortName']);
         $originalPrice =    filterStringBasic($_POST['originalPrice']);
         $sellingPrice =     filterStringBasic($_POST['sellingPrice']);
-        $category =         filterStringBasic($_POST['category']);
-        $tags =             filterStringBasic($_POST['tags']);
+        $author =         filterStringBasic($_POST['author']);
+        $branch =         filterStringBasic($_POST['branch']);
+        $semester =         filterStringBasic($_POST['semester']);
 
         if($_POST['description']==''){
             $description='-';
         }else{
             $description = filterStringBasic($_POST['description']);
         }
-    
-        if($_POST['specifications']==''){
-            $specifications='-';
-        }else{
-            $specifications = filterStringBasic($_POST['specifications']);
-        }
-    
-        if($_POST['kitContents']==''){
-            $kitContents='-';
-        }else{
-            $kitContents = filterStringBasic($_POST['kitContents']);
-        }
-
-        $imageCount = 1;
-        if(!$_FILES['img2']['name']==''){
-            $imageCount=2;
-        }
-        if(!$_FILES['img3']['name']==''){
-            $imageCount=3;
-        }
-
-        $fileButton=0;
-        if(!$_FILES['tutorial_file']['name']==''){
-            $fileButton=1;
-        }
 
 
-        $sql = "INSERT INTO items(`Full Name`, `Short Name`, `Original Price`, `Selling Price`, `Description`, `Specifications`, `Kit Contents`, `Category`, `Featured`, `Homepage`, `Image Count`, `Stock Status`, `File Availability`, `Deprecated`, `Tags`) VALUES(:fullName, :shortName, :oPrice, :sPrice, :desc, :specs, :kCont, :cat, 0, 0, :iCount, 1, :file, 0, :tags)";
+
+        $sql = "INSERT INTO items(`Name`, `Original Price`, `Selling Price`, `Description`, `Author`, `Branch`, `Semester`, `Homepage`, `Featured`, `Stock Status`, `Deprecated`) VALUES(:fullName, :oPrice, :sPrice, :desc, :author, :branch, :sem, 0, 0, 1, 0)";
 
         $statement = $pdo->prepare($sql);
 
         $statement->execute(
             [
                 'fullName'      => $fullName,
-                'shortName'     => $shortName,
                 'oPrice'        => $originalPrice,
                 'sPrice'        => $sellingPrice,
                 'desc'          => $description,
-                'specs'         => $specifications,
-                'kCont'         => $kitContents,
-                'cat'           => $category,
-                'iCount'        => $imageCount,
-                'file'          => $fileButton,
-                'tags'          => $tags
+                'author'        => $author,
+                'branch'        => $branch,
+                'sem'           => $semester
             ]
         );
 
@@ -139,23 +111,6 @@
         $target='../../images/products/'.$lastId.'.0.jpg';
         move_uploaded_file( $_FILES['img1']['tmp_name'], $target);
 
-        if(!$_FILES['img2']['name']==''){
-            
-            $target='../../images/products/'.$lastId.'.1.jpg';
-            move_uploaded_file( $_FILES['img2']['tmp_name'], $target);
-        }
-        
-        if(!$_FILES['img3']['name']==''){
-
-            $target='../../images/products/'.$lastId.'.2.jpg';
-            move_uploaded_file( $_FILES['img3']['tmp_name'], $target);
-        }
-
-        if(!$_FILES['tutorial_file']['name']==''){
-
-            $target='../../downloads/tutorials/tutorial_'.$lastId.'.zip';
-            move_uploaded_file( $_FILES['tutorial_file']['tmp_name'], $target);
-        }
 
         header('Location: ../products.php');
 
@@ -163,65 +118,31 @@
 
         $id =               filterStringBasic($_POST['id']);
         $fullName =         filterStringBasic($_POST['fullName']);
-        $shortName =        filterStringBasic($_POST['shortName']);
         $originalPrice =    filterStringBasic($_POST['originalPrice']);
         $sellingPrice =     filterStringBasic($_POST['sellingPrice']);
-        $category =         filterStringBasic($_POST['category']);
-        $tags =             filterStringBasic($_POST['tags']);
-        
-        
+        $author =         filterStringBasic($_POST['author']);
+        $branch =         filterStringBasic($_POST['branch']);
+        $semester =         filterStringBasic($_POST['semester']);
 
         if($_POST['description']==''){
             $description='-';
         }else{
             $description = filterStringBasic($_POST['description']);
         }
-        if($_POST['specifications']==''){
-            $specifications='-';
-        }else{
-            $specifications = filterStringBasic($_POST['specifications']);
-        }
-        if($_POST['kitContents']==''){
-            $kitContents='-';
-        }else{
-            $kitContents = filterStringBasic($_POST['kitContents']);
-        }
 
-
-        $imageCount =       filterStringBasic($_POST['iCount']);
-        if(!$_FILES['img1']['name']==''){
-            $imageCount=1;
-        }
-        if(!$_FILES['img2']['name']==''){
-            $imageCount=2;
-        }
-        if(!$_FILES['img3']['name']==''){
-            $imageCount=3;
-        }
-
-
-        $fileButton =       filterStringBasic($_POST['file']);
-        if(!$_FILES['tutorial_file']['name']==''){
-            $fileButton=1;
-        }
-
-        $sql = "UPDATE items SET `Full Name` = :fullName, `Short Name` = :shortName, `Original Price` = :oPrice, `Selling Price` = :sPrice, `Description` = :desc, `Specifications` = :specs, `Kit Contents` = :kCont, `Category` = :cat, `Image Count` = :iCount, `File Availability` = :file, `Tags` = :tags WHERE `ID` = :id";
+        $sql = "UPDATE items SET `Name` = :fullName, `Original Price` = :oPrice, `Selling Price` = :sPrice, `Description` = :desc, `Author` = :author, `Branch` = :branch, `Semester` = :semester WHERE `ID` = :id";
 
         $statement = $pdo->prepare($sql);
 
         $statement -> execute(
             [
                 'fullName'      => $fullName,
-                'shortName'     => $shortName,
                 'oPrice'        => $originalPrice,
                 'sPrice'        => $sellingPrice,
                 'desc'          => $description,
-                'specs'         => $specifications,
-                'kCont'         => $kitContents,
-                'cat'           => $category,
-                'iCount'        => $imageCount,
-                'file'          => $fileButton,
-                'tags'          => $tags,
+                'author'        => $author,
+                'branch'        => $branch,
+                'semester'      => $semester,
                 'id'            => $id
             ]
         );
@@ -234,40 +155,8 @@
                 unlink("../../images/products/".$id.".0.jpg");
             }
     
-            if(file_exists("../../images/products/".$id.".1.jpg")){
-
-                unlink("../../images/products/".$id.".1.jpg");
-            }
-    
-            if(file_exists("../../images/products/".$id.".2.jpg")){
-                
-                unlink("../../images/products/".$id.".2.jpg");
-            }   
-    
             $target='../../images/products/'.$id.'.0.jpg';
             move_uploaded_file( $_FILES['img1']['tmp_name'], $target);
-        }
-
-        if(!$_FILES['img2']['name']==''){
-            
-            $target='../../images/products/'.$id.'.1.jpg';
-            move_uploaded_file( $_FILES['img2']['tmp_name'], $target);
-        }
-        
-        if(!$_FILES['img3']['name']==''){
-            
-            $target='../../images/products/'.$id.'.2.jpg';
-            move_uploaded_file( $_FILES['img3']['tmp_name'], $target);
-        }
-
-        if(!$_FILES['tutorial_file']['name']==''){
-
-            if(file_exists('../../downloads/tutorials/tutorial_'.$id.'.zip')){
-                unlink('../../downloads/tutorials/tutorial_'.$id.'.zip');
-            }
-    
-            $target='../../downloads/tutorials/tutorial_'.$id.'.zip';
-            move_uploaded_file( $_FILES['tutorial_file']['tmp_name'], $target);
         }
 
         header('Location: ../products.php?id='.$id);
@@ -286,18 +175,6 @@
 
         if(file_exists("../../images/products/".$id.".0.jpg")){
             unlink("../../images/products/".$id.".0.jpg");
-        }
-
-        if(file_exists("../../images/products/".$id.".1.jpg")){
-            unlink("../../images/products/".$id.".1.jpg");
-        }
-
-        if(file_exists("../../images/products/".$id.".2.jpg")){
-            unlink("../../images/products/".$id.".2.jpg");
-        }   
-
-        if(file_exists('../../downloads/tutorials/tutorial_'.$id.'.zip')){
-            unlink('../../downloads/tutorials/tutorial_'.$id.'.zip');
         }
     }
 

@@ -34,6 +34,11 @@
         $s = $pdo->prepare("UPDATE orders SET `OStatus`='Delivered', `Operator`=:op WHERE `ID`=:id ");
         $s->execute(['id' => $id, ':op' => $op]);
 
+    }elseif($action == 'rent'){
+
+        $s = $pdo->prepare("UPDATE orders SET `OStatus`='Rented', `Operator`=:op WHERE `ID`=:id ");
+        $s->execute(['id' => $id, ':op' => $op]);
+
     }elseif($action == 'cancel'){
         
         $s = $pdo->prepare("UPDATE orders SET `OStatus`='Canceled', `Operator`=:op WHERE `ID`=:id ");

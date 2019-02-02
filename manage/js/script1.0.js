@@ -42,6 +42,32 @@ function deliver(id){
     }
 }
 
+function rent(id){
+
+    var op = document.getElementById("operator").value;
+    if(op == 'none'){
+        M.Toast.dismissAll();
+        M.toast({html: 'Please Select Your Name First!', displayLength: 1300});
+        return;
+    }
+
+    if(confirm("Are You Sure?")){
+
+        var strip = document.getElementById("s"+id);
+        strip.classList.add('hide');
+        M.toast({html: 'Marked as Rented', displayLength: 1000});
+
+        var request = new XMLHttpRequest();
+        request.open("GET", "handlers/orderOperation.php?action=rent&id="+id+"&op="+op, true);
+        request.send();
+
+        var request2 = new XMLHttpRequest();
+        request2.open("GET", "../handlers/mailEngine.php?action=orderRented&id="+id, true);
+        request2.send();
+
+    }
+}
+
 function cancel(id){
 
     var op = document.getElementById("operator").value;

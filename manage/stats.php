@@ -1,7 +1,7 @@
 <?php
     include './includes/config.php';
 
-    $title = 'Statistics - Malgadi Electronics';
+    $title = 'Statistics - Malgadi Books';
     $thisPage = 'stats';
 
     include  './includes/header.php';
@@ -93,7 +93,7 @@
             <section>
                 <div class="row">
                     <div class="col s12 center">
-                        <iframe width="100%" height="2500" src="https://datastudio.google.com/embed/reporting/1PpEHg_zShm1ErfYfLZLg2E2NeWgB7JFp/page/uOEW" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <!-- <iframe width="100%" height="2500" src="https://datastudio.google.com/embed/reporting/1PpEHg_zShm1ErfYfLZLg2E2NeWgB7JFp/page/uOEW" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                     </div>
                 </div>
             </section>

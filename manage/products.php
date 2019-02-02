@@ -28,7 +28,7 @@
         }
     }
 
-    $title = 'Products - Malgadi Electronics';
+    $title = 'Products - Malgadi Books';
     $thisPage = 'products';
 
     include  './includes/header.php';
@@ -98,7 +98,7 @@
                                     ?>
                                 
                                 <li id="s<?php echo $row['ID'];?>" class="active">
-                                    <div class="collapsible-header"><span><b><?php echo $row['ID']; ?>.</b>&nbsp;&nbsp;<?php echo $row['Full Name']; ?></span></div>
+                                    <div class="collapsible-header"><span><b><?php echo $row['ID']; ?>.</b>&nbsp;&nbsp;<?php echo $row['Name']; ?></span></div>
                                     <div class="collapsible-body">
                                         <div class="row">
                                             <div class="col s4 m5">
@@ -211,7 +211,7 @@
                                     $itemInstance = $d->fetch();
                         ?>
                             <tr>
-                                <td><?php echo $itemInstance['Full Name']; ?></td>
+                                <td><?php echo $itemInstance['Name']; ?></td>
                                 <td><?php echo $waitingCount; ?></td>
                             </tr>
                     

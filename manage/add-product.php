@@ -9,7 +9,7 @@
         header("Location: ".ManageAddress."/handlers/logout.php");
     }
 
-    $title = 'Add Product - Malgadi Electronics';
+    $title = 'Add Product - Malgadi Books';
     $thisPage = 'products';
 
     include  './includes/header.php';
@@ -25,7 +25,7 @@
                             <h4 class="light">Add Product</h4>
                         </div>
                         <div class="col s12 center">
-                            <p class=light"">Please read these <a href="#addIns" class="modal-trigger">instructions</a> carefully before adding a product.</p>
+                            <p class="light">Please read these <a href="#addIns" class="modal-trigger">instructions</a> carefully before adding a product.</p>
                         </div>
                     </div>
 
@@ -33,13 +33,9 @@
                         <input name="action" value="addProduct" class="hide">
                     <div class="row">                        
 
-                        <div class="col s6 m4 offset-m2 input-field">
+                        <div class="col s12 m8 offset-m2 input-field">
                             <input id="fullName" type="text" name="fullName" required>
                             <label for="fullName">Full Name*</label>
-                        </div>
-                        <div class="col s6 m4 input-field">
-                            <input id="shortName" type="text" name="shortName" required>
-                            <label for="shortName">Short Name*</label>
                         </div>
                         <div class="col s6 m4 offset-m2 input-field">
                             <input id="original_price" type="number" name="originalPrice" required>
@@ -53,78 +49,53 @@
                             <textarea id="description" name="description" class="materialize-textarea"></textarea>
                             <label for="description">Description</label>
                         </div>
-                        <div class="col s6 m4">
-                            <label>Category*</label>
-                            <select class="browser-default" name="category" required>
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="Basic Components">Basic Components</option>
-                                <option value="Robotics">Robotics</option>
-                                <option value="Controllers">Controllers</option>
-                                <option value="Sensors">Sensors</option>
-                                <option value="IC">IC</option>
-                                <option value="Kits">Kits</option>
-                                <option value="EG Kits">EG Kits</option>
-                            </select>
+
+                        <div class="col s6 m4 input-field">
+                            <textarea id="author" name="author" class="materialize-textarea"></textarea>
+                            <label for="author">Author</label>
                         </div>
                     
                     </div>
                     
                     <div class="row">
                         
-                        <div class="col s6 m4 offset-m2 input-field">
-                            <textarea id="specifications" name="specifications" class="materialize-textarea"></textarea>
-                            <label for="specifications">Specifications</label>
-                        </div>
-                        <div class="col s6 m4 input-field">
-                            <textarea id="kit_contents" name="kitContents" class="materialize-textarea"></textarea>
-                            <label for="kit_contents">Kit Contents</label>
+                        <div class="col s6 m4 offset-m2">
+                            <label>Branch*</label>
+                            <select class="browser-default" name="branch" required>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="cm">Common</option>
+                                <option value="ce">CE</option>
+                                <option value="it">IT</option>
+                                <option value="ec">EC</option>
+                                <option value="mh">Mech</option>
+                                <option value="ic">IC</option>
+                                <option value="cl">Civil</option>
+                                <option value="ch">Chem</option>
+                            </select>
                         </div>
 
-                    </div>
-
-                    <div class="row">
-                        <div class="col s6 m4 offset-m2 input-field">
-                            <textarea id="tags" name="tags" class="materialize-textarea" required></textarea>
-                            <label for="tags">Search Tags*</label>
+                        <div class="col s6 m4">
+                            <label>Semester*</label>
+                            <select class="browser-default" name="semester" required>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
                         </div>
+
                     </div>
 
                     <div class="row">
 
                         <div class="file-field input-field col s12 m8 offset-m2">
                             <div class="btn blue-grey darken-4">
-                                <span>IMG 1*</span>
+                                <span>IMG*</span>
                                 <input type="file" accept=".jpg" name="img1" required>
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
-                            </div>
-                        </div>
-
-                        <div class="file-field input-field col s12 m8 offset-m2">
-                            <div class="btn blue-grey darken-4">
-                                <span>IMG 2</span>
-                                <input type="file" accept=".jpg" name="img2">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
-                            </div>
-                        </div>
-
-                        <div class="file-field input-field col s12 m8 offset-m2">
-                            <div class="btn blue-grey darken-4">
-                                <span>IMG 3</span>
-                                <input type="file" accept=".jpg" name="img3">
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
-                            </div>
-                        </div>
-
-                        <div class="file-field input-field col s12 m8 offset-m2">
-                            <div class="btn blue-grey darken-4">
-                                <span>Tutorial File</span>
-                                <input type="file" accept=".zip" name="tutorial_file">
                             </div>
                             <div class="file-path-wrapper">
                                 <input class="file-path validate" type="text">
@@ -152,15 +123,10 @@
                     <p class="light">It's important to keep the following things in mind before adding a product.</p>
                     <ul class="collection light">
                         <li class="collection-item">"Full Name" is the name displayed on the product page.</li>
-                        <li class="collection-item">"Short Name" is the name displayed on the "cards" in the category page.</li>
                         <li class="collection-item">Original price is the price that will be <strike>striked out</strike>.</li>
                         <li class="collection-item">Selling price is the price with which the item will be sold.</li>
-                        <li class="collection-item">Specifications and kit items will be displayed as lists on the product page. Use * to separate every list item. <span class="grey-text">eg. List item 1 * List item 2</span></li>
-                        <li class="collection-item">Search tags will be used by the search function for indexing. Add a few tags seperated by space.</li>
-                        <li class="collection-item">IMG 1 is compulsory to add, it will be used as the main image of the product.</li>
-                        <li class="collection-item">IMG 2 and IMG 3 are optional.</li>
-                        <li class="collection-item">The image specs are as follows: Dimensions: 500X400 px. File extension: .jpg</li>
-                        <li class="collection-item">The tutorial file should always be a zip file.</li>
+                        <li class="collection-item">IMG is compulsory to add, it will be used as the main image of the product.</li>
+                        <li class="collection-item">The image specs are as follows: Dimensions: 400X400 px. File extension: .jpg</li>
                     </ul>
                     <p class="light">If the above conditions are not followed, the website is likely to show errors.</p>
                 </div>

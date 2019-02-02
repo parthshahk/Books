@@ -10,7 +10,7 @@
         header("Location: ".ManageAddress."/handlers/logout.php");
     }
 
-    $title = 'Configurations - Malgadi Electronics';
+    $title = 'Configurations - Malgadi Books';
     $thisPage = 'config';
 
     include  './includes/header.php';

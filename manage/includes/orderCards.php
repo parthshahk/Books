@@ -16,11 +16,19 @@
             $oStatus = $row['OStatus'];
             $color = 'red';
             $opText = 'Order Canceled by ';
+
         }elseif($row['OStatus'] == 'Delivered'){
             
             $oStatus = $row['OStatus'];
             $color = 'green';
             $opText = 'Marked as delivered by ';
+
+        }elseif($row['OStatus'] == 'Rented'){
+
+            $oStatus = $row['OStatus'];
+            $color = 'purple darken-2';
+            $opText = 'Marked as rented by ';
+
         }
 
         $contents='';
@@ -28,18 +36,18 @@
         for($i = 0; $i < sizeof($contentArray) ;$i++){
 
             $contentArray[$i] = explode(".", $contentArray[$i]);
-            $s = $pdo->prepare("SELECT `Full Name` FROM items WHERE `ID`=".$contentArray[$i][0]."");
+            $s = $pdo->prepare("SELECT `Name` FROM items WHERE `ID`=".$contentArray[$i][0]."");
             $s->execute();
             $row2 = $s->fetch();
-            $contents .= $row2['Full Name']." <b>X ".$contentArray[$i][1]."</b><br>";
+            $contents .= $row2['Name']." <b>X ".$contentArray[$i][1]."</b><br>";
 
             if(!isset($requirement[$contentArray[$i][0]])){
                 $requirement[$contentArray[$i][0]]['quantity'] = $contentArray[$i][1];
-                $requirement[$contentArray[$i][0]]['name'] = $row2['Full Name'];
+                $requirement[$contentArray[$i][0]]['name'] = $row2['Name'];
                 $requirement[$contentArray[$i][0]]['idList'] = $row['ID'];
             }else{
                 $requirement[$contentArray[$i][0]]['quantity'] += $contentArray[$i][1];
-                $requirement[$contentArray[$i][0]]['name'] = $row2['Full Name'];
+                $requirement[$contentArray[$i][0]]['name'] = $row2['Name'];
                 $requirement[$contentArray[$i][0]]['idList'] .= ", ".$row['ID'];
             }
 
@@ -58,7 +66,18 @@
             <li class="collection-item"><b>Br/Sem :&nbsp;</b><?php echo $row['Branch']; ?>/<?php echo $row['Semester']; ?></li>
             <li class="collection-item"><b>Contents :&nbsp;</b><br><?php echo $contents; ?></li>
             <li class="collection-item"><b>Amount :&nbsp;</b>Rs. <?php echo $row['Amount']; ?></li>
+            <li class="collection-item"><b>Type :&nbsp;</b><?php echo $row['Type']; ?></li>
+            <?php
+                if($row['Type'] == 'Buy'){
+            ?>
             <li class="collection-item <?php echo $thisPage == 'home' ? '' : 'hide';?>"><a href="#" onclick="deliver(<?php echo $row['ID']; ?>)">Delivered</a><a href="#" onclick="cancel(<?php echo $row['ID']; ?>)" class="right">Cancel</a></li>
+            <?php
+                }else{
+            ?>
+            <li class="collection-item <?php echo $thisPage == 'home' ? '' : 'hide';?>"><a href="#" onclick="rent(<?php echo $row['ID']; ?>)">Rented</a><a href="#" onclick="cancel(<?php echo $row['ID']; ?>)" class="right">Cancel</a></li>
+            <?php
+                }
+            ?>
         </ul>
     </div>
 </li>

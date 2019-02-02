@@ -7,11 +7,11 @@
     define("BaseAddress","http://".$_SERVER['SERVER_NAME']);
     define("ManageAddress","http://".$_SERVER['SERVER_NAME']."/manage");
 
-    if(isset($_COOKIE['fb2'])){
+    if(isset($_COOKIE['fbb2'])){
         $_SESSION['login'] = 2;
     }
 
-    if(isset($_COOKIE['gd2'])){
+    if(isset($_COOKIE['gdb2'])){
         $_SESSION['login'] = 1;
     }
 
@@ -40,11 +40,11 @@
             if(isset($_SESSION['login'])){
     
                 if($_SESSION['login'] == 2){
-                    setcookie("fb2", "askljfsdFsdfSD2FSDDSe324e2F1", time()+2592000, "/manage");
+                    setcookie("fbb2", "askljfsdFsdfSD2FSEESe324e2F1", time()+2592000, "/manage");
                 }
 
                 if($_SESSION['login'] == 1){
-                    setcookie("gd2", "askljfsdFsdfSD1FSDDSe324e2F1", time()+2592000, "/manage");
+                    setcookie("gdb2", "askljfsdFsdfSD1FSEESe324e2F1", time()+2592000, "/manage");
                 }
 
             }
@@ -59,10 +59,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Member Login - Malgadi Electronics</title>
+        <title>Member Login - Malgadi Books</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="theme-color" content="#263238">
+        <meta name="theme-color" content="#9c27b0">
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
         <link rel="stylesheet" href="<?php echo ManageAddress; ?>/css/main1.0.css">

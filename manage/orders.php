@@ -20,7 +20,7 @@
         }
     }
 
-    $title = 'Member Section - Malgadi Electronics';
+    $title = 'Member Section - Malgadi Books';
     $thisPage = 'orders';
 
     include  './includes/header.php';

@@ -20,7 +20,7 @@
         <meta property="og:url" content="<?php echo $canonUrl; ?>" />
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />    
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
-        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css?q=1">
+        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css?q=2">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Anton|Roboto:300,400,500" rel="stylesheet">
         <link rel="canonical" href="<?php echo $canonUrl; ?>" />
     </head>

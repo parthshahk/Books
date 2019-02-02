@@ -1,7 +1,7 @@
 <?php
 
-    if($_SERVER['SERVER_NAME'] != 'electronics.malgadi.co.in' && $_SERVER['SERVER_NAME'] != 'localhost'){
-        header('Location: http://electronics.malgadi.co.in');
+    if($_SERVER['SERVER_NAME'] != 'books.malgadi.co.in' && $_SERVER['SERVER_NAME'] != 'localhost'){
+        header('Location: http://books.malgadi.co.in');
     }
 
     session_start();

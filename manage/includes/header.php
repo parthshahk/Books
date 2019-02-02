@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>    
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104414893-5"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-104414893-5');
-        </script>
         <title><?php echo $title; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="theme-color" content="#21313c">
+        <meta name="theme-color" content="#9c27b0">
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
         <link rel="stylesheet" href="<?php echo ManageAddress; ?>/css/main1.0.css">
