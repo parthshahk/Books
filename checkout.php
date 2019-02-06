@@ -89,7 +89,7 @@
                     <p class="light">Currently we deliver only in Nadiad and accept cash on delivery.</p>
                 </div>
                 <div class="col s12 center">
-                    <p class="light">By using this service, you agree to the <a href="#modal-terms" class="modal-trigger">terms and privacy policy</a> of Malgadi Electronics.</p>
+                    <p class="light">By using this service, you agree to the <a href="#modal-terms" class="modal-trigger">terms and privacy policy</a> of Malgadi Books.</p>
                 </div>
             </div>
             <div class="row">
@@ -112,7 +112,7 @@
 
             <div class="row">
                 <div class="col s12">
-                    <blockquote>This Privacy Policy governs the manner in which Malgadi Electronics collects, uses, maintains and discloses information collected from users (each, a "User") of the website ("Site"). This privacy policy applies to the Site and all products and services offered by Malgadi Electronics.</blockquote>
+                    <blockquote>This Privacy Policy governs the manner in which Malgadi Books collects, uses, maintains and discloses information collected from users (each, a "User") of the website ("Site"). This privacy policy applies to the Site and all products and services offered by Malgadi Books.</blockquote>
                 </div>
             </div>
 
@@ -121,19 +121,19 @@
                     <h5 class="light">Product Related Terms</h5>
                 </div>
                 <div class="col s12">
-                    <p>The sole purpose of this initiative is to provide good quality electronic products at a cheaper rate.</p>
-                    <p>We usually deliver within 3-5 days, however the time of delivery depends on factors like product availability, holidays, etc.</p>
-                    <p>Urgent orders can take atleast upto 12 hours to be processed.</p>
+                    <p><b>The books delivered are one-time used books</b>. For brand new books, contact us personally.</p>
+                    <p>The sole purpose of this initiative is to provide good quality books at a cheaper rate.</p>
+                    <p>We usually deliver within 7 days, however the time of delivery depends on factors like book availability, holidays, etc.</p>
                     <p>We expect the payment to be made either prior to (online payment) or at the time of delivery.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col s12">
-                    <h5 class="light">Return Policy</h5>
+                    <h5 class="light">Rent Policy</h5>
                 </div>
                 <div class="col s12">
-                    <p>We here at Malgadi believe in providing the best quality products. Every product is thoroughly examined for their integrity prior to delivery. However, we don't deliver tested items but we assure you that the items delivered are of the best quality. Thus, we do not guarantee a replacement in case of product damaged by a customer. This follows because the items are not purchased under any sort of warranty/guarantee from the dealer. But, we may offer to fix it for you if possible, so make sure to contact us in such situations.</p>
+                    <p>For rented books, 35% of the printed price will be charged by Malgadi.</p>
                 </div>
             </div>
 
