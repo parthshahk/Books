@@ -58,7 +58,7 @@
 
                     <div class="row">
                         <div class="col s12 center">
-                            <button class="btn-large waves-effect waves-light blue-grey darken-3" type="submit" form="item-search-form">Search<i class="fa fa-search right" aria-hidden="true"></i></button>
+                            <button class="btn-large waves-effect waves-light blue darken-2" type="submit" form="item-search-form">Search<i class="fa fa-search right" aria-hidden="true"></i></button>
                         </div>
                     </div>
 

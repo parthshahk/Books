@@ -27,7 +27,7 @@
                     <?php
                         }
                     ?>
-                    <div class="col m4 s12">
+                    <div class="col m3 s10 offset-s1">
                         <div class="card grey lighten-3">
                             <div class="card-image">
                                 <img class="activator" src="<?php echo BaseAddress; ?>/images/products/<?php echo $row['ID']; ?>.0.jpg" alt="<?php echo $row['Name']; ?>">                                

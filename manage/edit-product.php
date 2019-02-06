@@ -126,7 +126,7 @@
                     <div class="row">
 
                         <div class="file-field input-field col s12 m8 offset-m2">
-                            <div class="btn blue-grey darken-4">
+                            <div class="btn blue darken-2">
                                 <span>IMG</span>
                                 <input type="file" accept=".jpg" name="img1">
                             </div>
@@ -139,7 +139,7 @@
 
                     <div class="row">
                         <div class="col s12 center">
-                            <button class="btn-large waves-light waves-effect blue-grey darken-4" type="submit" form="edit-product" id="editSubmit">Submit</button>
+                            <button class="btn-large waves-light waves-effect blue darken-2" type="submit" form="edit-product" id="editSubmit">Submit</button>
                         </div>
                     </div>
 
@@ -159,7 +159,7 @@
                         <li class="collection-item">Original price is the price that will be <strike>striked out</strike>.</li>
                         <li class="collection-item">Selling price is the price with which the item will be sold.</li>
                         <li class="collection-item">IMG is compulsory to add, it will be used as the main image of the product.</li>
-                        <li class="collection-item">The image specs are as follows: Dimensions: 400X400 px. File extension: .jpg</li>
+                        <li class="collection-item">The image specs are as follows: Dimensions: 200X250 px. File extension: .jpg</li>
                         <li class="collection-item">The tutorial file should always be a zip file.</li>
                     </ul>
                     <p class="light">If the above conditions are not followed, the website is likely to show errors.</p>

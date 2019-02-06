@@ -65,13 +65,13 @@
         <meta name="theme-color" content="#9c27b0">
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
-        <link rel="stylesheet" href="<?php echo ManageAddress; ?>/css/main1.0.css">
+        <link rel="stylesheet" href="<?php echo ManageAddress; ?>/css/main1.0.css?v=1">
         <link href="https://fonts.googleapis.com/css?family=Anton|Oxygen:300,400,700" rel="stylesheet">
     </head>
     <body class="grey lighten-3">
         
         <div class="navbar-fixed">
-            <nav class="blue-grey darken-4 z-depth-0">
+            <nav class="purple z-depth-0">
                 <div class="nav-wrapper">
                     <a href="<?php echo ManageAddress; ?>" class="brand-logo center">Malgadi</a>
                 </div>
@@ -116,7 +116,7 @@
 
                                     <div class="row"></div>
 
-                                    <button class="col s12 btn-large waves-effect waves-light pink" type="submit" form="login-form">Sign In</button>
+                                    <button class="col s12 btn-large waves-effect waves-light blue darken-2" type="submit" form="login-form">Sign In</button>
 
                                 </div>
                             </div>          
