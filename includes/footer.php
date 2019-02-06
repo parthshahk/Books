@@ -132,7 +132,7 @@
             </div>
         </div>
         <script src="<?php echo BaseAddress; ?>/js/materialize.min.js"></script>
-        <script src="<?php echo BaseAddress; ?>/js/script.js?q=2"></script>
+        <script src="<?php echo BaseAddress; ?>/js/script.js?q=3"></script>
         <script src="https://use.fontawesome.com/25db837a52.js"></script>
     </body>
 </html>

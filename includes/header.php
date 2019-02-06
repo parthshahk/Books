@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104414893-6"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104414893-6"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'UA-104414893-6');
-        </script> -->
+        </script>
         <title><?php echo $title; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="<?php echo $pageDescription; ?>" />
@@ -20,7 +20,7 @@
         <meta property="og:url" content="<?php echo $canonUrl; ?>" />
         <link rel="shortcut icon" href="<?php echo BaseAddress; ?>/favicon.ico" type="image/x-icon" />    
         <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/materialize.min.css">
-        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css?q=3">
+        <link rel="stylesheet" href="<?php echo BaseAddress; ?>/css/main.1.0.css?q=4">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Anton|Roboto:300,400,500" rel="stylesheet">
         <link rel="canonical" href="<?php echo $canonUrl; ?>" />
     </head>
