@@ -19,11 +19,11 @@
 
         $password = filterStringBasic($_POST['password']);
 
-        if(sha1($password) == 'f5d9b96d0342fa5df23ac63af81487342d76c0f4'){              // Lower Level Password
+        if(sha1($password) == '33f4c6aafb21c4e2b9c7cf9a14dc56993aac549d'){              // Lower Level Password
             $_SESSION['login'] = 2;
         }
 
-        if(sha1($password) == '4f98b4d64d8c76076d941b2cb78e6f450036e293'){              // Higher Level Password
+        if(sha1($password) == '4d62b464c1cf9cb8445f57f09fa242879943928c'){              // Higher Level Password
             $_SESSION['login'] = 1;
         }
 
