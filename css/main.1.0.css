@@ -178,6 +178,9 @@ nav .tabs .tab a:hover{
     margin-top: 50px;
     margin-bottom: 30px;
 }
+.item-card{
+    margin-bottom: 40px;
+}
 .card-title{
     font-size: 1em !important;
 }
