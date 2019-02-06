@@ -144,7 +144,7 @@
             <li>
                 <div class="user-view">
                     <div class="background">
-                        <img src="<?php echo BaseAddress; ?>/images/logoPushed.jpg" width="100%" alt="Malgadi Electronics Logo">
+                        <img src="<?php echo BaseAddress; ?>/images/logoPushed.jpg" width="100%" alt="Malgadi Books Logo">
                     </div>
                     <br><br><br>
                 </div>

@@ -23,7 +23,7 @@
     /*
         Template of db-credentials.php
 
-        if($_SERVER['SERVER_NAME'] == 'electronics.malgadi.co.in'){
+        if($_SERVER['SERVER_NAME'] == 'books.malgadi.co.in'){
 
             $host =  '';
             $user = '';
