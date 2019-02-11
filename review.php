@@ -50,7 +50,7 @@
                 </form>
                 <div class="row">
                     <div class="col s12 center">
-                        <button class="btn-large waves-light waves-effect red" form="review-form" id="review-submit" type="submit">Post</button>
+                        <button class="btn-large waves-light waves-effect blue darken-2" form="review-form" id="review-submit" type="submit">Post</button>
                     </div>
                 </div>
                 <div class="row">
