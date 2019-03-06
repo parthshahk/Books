@@ -37,7 +37,20 @@
                 <div class="row"></div>
                 <div class="row">
                     <div class="col s12 center">
-                        <h4 class="light"><?php if($branch != 'cm') echo strtoupper($branch) . " "; echo "Sem ". $sem . " Books"; ?></h4>
+                        <h4 class="light">
+                        <?php
+
+                            if($branch != 'bs'){
+                                if($branch != 'cm'){
+                                    echo strtoupper($branch) . " ";
+                                }
+                                echo "Sem ". $sem . " Books";
+                            }else{
+                                echo "Welcome to BookShelf";
+                            }
+
+                        ?>
+                        </h4>
                     </div>
                 </div>
             </div>

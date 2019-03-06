@@ -25,6 +25,7 @@
     $p->execute(["id" => $id]);
     $row = $p->fetch();
 
+    $branch['bs']='';
     $branch['cm']='';
     $branch['ce']='';
     $branch['it']='';
@@ -96,6 +97,7 @@
                             <label>Branch*</label>
                             <select class="browser-default" name="branch" required>
                                 <option value="" disabled selected>Choose your option</option>
+                                <option value="bs" <?php echo $branch['bs'] ?>>BookShelf</option>
                                 <option value="cm" <?php echo $branch['cm'] ?>>Common</option>
                                 <option value="ce" <?php echo $branch['ce'] ?>>CE</option>
                                 <option value="it" <?php echo $branch['it'] ?>>IT</option>

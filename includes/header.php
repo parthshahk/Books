@@ -56,13 +56,14 @@
 
             <div class="nav-content">
                 <ul class="tabs tabs-fixed-width grey lighten-5">
+                    <li class="tab"><a target="_self" href="categories.php?br=bs&sem=1" class="grey-text text-darken-2">BookShelf</a></li>
                     <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="ceDrop">CE</a></li>
                     <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="itDrop">IT</a></li>
                     <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="ecDrop">EC</a></li>
-                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="mechDrop">Mech</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="mechDrop">MH</a></li>
                     <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="icDrop">IC</a></li>
-                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="civilDrop">Civil</a></li>
-                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="chemDrop">Chem</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="civilDrop">CL</a></li>
+                    <li class="tab"><a href="#" class="grey-text text-darken-2 dropdown-trigger" data-target="chemDrop">CH</a></li>
                     <li class="tab hide"><a href="#" class="active"></a></li>
                 </ul>
             </div>
@@ -149,6 +150,8 @@
                     <br><br><br>
                 </div>
             </li>
+
+            <li class="hide-on-large-only"><a href="categories.php?br=bs&sem=1"><span class="light">BookShelf</span></a></li>
 
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">

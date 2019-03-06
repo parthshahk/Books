@@ -63,6 +63,7 @@
                             <label>Branch*</label>
                             <select class="browser-default" name="branch" required>
                                 <option value="" disabled selected>Choose your option</option>
+                                <option value="bs">BookShelf</option>
                                 <option value="cm">Common</option>
                                 <option value="ce">CE</option>
                                 <option value="it">IT</option>
